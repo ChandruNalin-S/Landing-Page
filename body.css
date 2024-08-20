@@ -1,0 +1,60 @@
+.kids-image{
+  display: block;
+  width: 300px;
+}
+
+
+.title{
+  font-family: "DM Sans",sans-serif;
+  margin-left: 110px;
+  margin-top: 100px;
+}
+
+
+.brand-container{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(39, 39, 46);
+  flex-shrink: 0;
+}
+
+.brand-details{
+  width: 490px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins",sans-serif;
+  color:white ;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.readMore a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Poppins",sans-serif;
+}
+
+@media (max-width:1000px) {
+  .brand-container{
+    flex-direction: column;
+  }
+
+  .brand-details{
+    margin-top: 20px;
+  }
+
+  .readMore{
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (min-width:1001) and (max-width:2000px) {
+  .brand-container{
+    flex-direction: row;
+  }
+}
+

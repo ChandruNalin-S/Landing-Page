@@ -1,0 +1,113 @@
+.contact-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+
+.contact-left-title h2{
+  font-weight: 600;
+  color: red;
+   font-size: 40px;
+   margin-bottom: 5px;  
+}
+
+.contact-left-title hr{
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: red;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.contact-inputs{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-family: "Poppins",sans-serif;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 20px;
+  border: 1px solid gray;
+}
+
+.contact-left textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+
+.contact-inputs:focus{
+  border: 1px solid rgb(239, 237, 237);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.contact-inputs::placeholder{
+  color: rgb(156, 152, 152);
+}
+
+.contact-left button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 15px;
+  color: white;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg,rgb(232, 122, 122),red); 
+  cursor: pointer;  
+}
+
+.contact-left button img{
+  height: 15px;
+}
+
+
+.contact-right{
+  background-color:rgb(39, 39,46);
+  color: white;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: start;
+  padding-bottom:20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 14px;
+  font-family: "Poppins",sans-serif;
+  box-shadow:rgba(0,0,0,0.25) 0px 9px 18px 0px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.contact-right p{
+  color: red;
+}
+
+.contact-right p:hover{
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width:950px){
+  .contact-right{
+    width: 40%;
+  }
+}
