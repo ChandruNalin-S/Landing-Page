@@ -11,7 +11,7 @@ const HeaderHTML = ()=> {
     </div>
     <div className="nav-container">
       <ul className="nav-element">
-        <li><a href="#home">Home</a></li>
+        <li><a href="#brand">Brand</a></li>
         <li><a href="#About Us">About Us</a></li>
         <li><a href="#Contact Us">Contact Us</a></li>
       </ul>
@@ -21,7 +21,7 @@ const HeaderHTML = ()=> {
 };
 
 
-const title = (<h2 className="title" id="home">Kids Items</h2>) ;
+const title = (<h2 className="title" id="brand">Kids Items</h2>) ;
 
 const BodyHtml = ()=>{
   return (
@@ -42,7 +42,7 @@ const BodyHtml = ()=>{
 }
 
 
-const title2 = (<h2 class="title" id="About Us">About Us</h2>);
+const title2 = (<h2 className="title" id="About Us">About Us</h2>);
 
 
 const AboutHtml = ()=>{
@@ -62,13 +62,38 @@ const AboutHtml = ()=>{
 }
 
 
+const ContactHtml = ()=>{
+  return(
+      <div className="contact-container" id="Contact Us">
+      <form className="contact-left">
+        <div className="contact-left-title">
+          <h2>Get in touch</h2>
+          <hr/>
+        </div>
+        <input type="text" placeholder="Your Name" name="name" className="contact-inputs" required />
+        <input type="email" placeholder="Your Email" name="email" className="contact-inputs" required />
+        <textarea name="message" placeholder="Your Message" className="contact-inputs"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div className="contact-right">
+        <h3>Email</h3>
+        <p>info@growage.in</p>
+      </div>
+    </div>
+  )
+}
+
+
 
 const AppLayout = ()=>{
   return (
     <div id="App">
       <HeaderHTML />
+      {title}
       <BodyHtml />
+      {title2}
       <AboutHtml />
+      <ContactHtml />
     </div>
   )
 }

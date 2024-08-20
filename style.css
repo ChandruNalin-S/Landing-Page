@@ -41,10 +41,12 @@
   text-decoration: none;
   color: rgb(82, 82, 96);
   font-family: "DM Sans",sans-serif;
+  transition: color 0.15s;
 }
 
 .nav-element li a:hover{
   color: red;
+  text-decoration: underline;
 }
 
 .nav-element li a:active{

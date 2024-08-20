@@ -16,8 +16,9 @@
 .contact-left-title h2{
   font-weight: 600;
   color: red;
-   font-size: 40px;
-   margin-bottom: 5px;  
+  font-size: 40px;
+  margin-bottom: 5px;  
+  font-family: "DM Sans",sans-serif;
 }
 
 .contact-left-title hr{
@@ -69,9 +70,15 @@
   color: white;
   gap: 10px;
   border: none;
-  border-radius: 50px;
+  border-radius: 30px;
   background: linear-gradient(270deg,rgb(232, 122, 122),red); 
-  cursor: pointer;  
+  cursor: pointer; 
+  transition: box-shadow 0.15s;
+  font-family: "Poppins",sans-serif;
+}
+
+.contact-left button:hover{
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.20);
 }
 
 .contact-left button img{
